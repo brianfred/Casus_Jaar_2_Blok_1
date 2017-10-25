@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+          package="Casus_Jaar_2_Blok_1_Groep_3.Casus_Jaar_2_Blok_1_Groep_3" 
+          android:versionCode="1" 
+          android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="21" />
+  <application android:allowBackup="true" android:label="@string/app_name">
+  </application>
+</manifest>
