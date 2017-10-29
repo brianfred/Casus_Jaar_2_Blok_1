@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Je gaat nu naar het programma wat je hebt aangeklikt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="500.0dp"
+        android:id="@+id/txtOpenProgram" />
+    <Button
+        android:text="Ga terug naar het menu"
+        android:layout_width="225.0dp"
+        android:layout_height="100.0dp"
+        android:id="@+id/btnTerugOpenProgram"
+        android:layout_marginLeft="200.0dp"
+        android:layout_marginRight="200.0dp"
+        android:layout_marginTop="100.0dp" />
+</LinearLayout>

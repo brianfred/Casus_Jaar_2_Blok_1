@@ -33,7 +33,7 @@
         android:layout_marginRight="100.0dp"
         android:layout_marginTop="50.0dp" />
     <Button
-        android:text="Ziggo GO"
+        android:text="Ziggo Go"
         android:layout_width="match_parent"
         android:layout_height="200.0dp"
         android:id="@+id/btnZiggo"

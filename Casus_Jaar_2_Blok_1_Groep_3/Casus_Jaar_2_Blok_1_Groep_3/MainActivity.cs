@@ -17,40 +17,49 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             btnMenuNetflix = FindViewById<Button>(Resource.Id.btnNetflix);
             btnMenuNetflix.Click += delegate
             {
-                openNetflixMenu();   
+                string program = "Netflix";
+                openProgram(program);
             };
 
             btnMenuYoutube = FindViewById<Button>(Resource.Id.btnYoutube);
             btnMenuYoutube.Click += delegate
             {
-                openYoutubeMenu();
+                string program = "Youtube";
+                openProgram(program);
             };
 
             btnMenuZiggo = FindViewById<Button>(Resource.Id.btnNetflix);
             btnMenuZiggo.Click += delegate
             {
-                openZiggoMenu();
+                string program = "Ziggo Go";
+                openProgram(program);
             };
 
             btnMenuInstellingen = FindViewById<Button>(Resource.Id.btnInstellingen);
             {
-
+                openInstellingen();
             };
         }
-        private void openNetFlixMenu()
+        private void openProgram(string program)
         {
-            SetContentView(Resource.Layout.LayoutNetflixMenu);
+            SetContentView(Resource.Layout.LayoutOpenProgram);
+            btnTerugOP = FindViewById<Button>(Resource.Id.btnTerugOpenProgram);
+            btnTerugOP.Click += delegate
+            {
+                SetContentView(Resource.Layout.LayoutMenu);
+            };
         }
 
-        private void openYoutubeMenu()
+        private void openInstellingen()
         {
-            SetContentView(Resource.Layout.LayoutYoutubeMenu);
+            SetContentView(Resource.Layout.LayoutInstellingen);
+            btnTerugInst = FindViewById<Button>(Resource.Id.btnInstellingenTerug);
+            btnTerugInst.Click += delegate
+            {
+                SetContentView(Resource.Layout.LayoutMenu);
+            };
         }
 
-        private void openZiggoMenu()
-        {
-            SetContentView(Resource.Layout.LayoutZiggoMenu);
-        }
     }
 }
 
