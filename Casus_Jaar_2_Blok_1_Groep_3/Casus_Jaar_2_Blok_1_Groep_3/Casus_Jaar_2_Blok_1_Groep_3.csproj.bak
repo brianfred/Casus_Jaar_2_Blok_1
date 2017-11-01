@@ -63,13 +63,10 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\LayoutNetflixMenu.axml">
+    <AndroidResource Include="Resources\layout\LayoutOpenProgram.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\LayoutYoutubeMenu.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\LayoutZiggoMenu.axml">
+    <AndroidResource Include="Resources\layout\LayoutInstellingen.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

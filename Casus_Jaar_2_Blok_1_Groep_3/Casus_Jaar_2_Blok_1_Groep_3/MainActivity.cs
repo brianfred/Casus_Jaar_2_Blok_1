@@ -46,7 +46,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             btnTerugOP = FindViewById<Button>(Resource.Id.btnTerugOpenProgram);
             btnTerugOP.Click += delegate
             {
-                SetContentView(Resource.Layout.LayoutMenu);
+                SetContentView(Resource.Layout.main);
             };
         }
 
@@ -56,7 +56,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             btnTerugInst = FindViewById<Button>(Resource.Id.btnInstellingenTerug);
             btnTerugInst.Click += delegate
             {
-                SetContentView(Resource.Layout.LayoutMenu);
+                SetContentView(Resource.Layout.main);
             };
         }
 
