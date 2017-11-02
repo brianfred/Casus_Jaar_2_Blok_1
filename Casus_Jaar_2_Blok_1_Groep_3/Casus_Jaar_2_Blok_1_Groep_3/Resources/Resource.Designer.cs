@@ -44,8 +44,8 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040007
-			public const int btnInstellingen = 2130968583;
+			// aapt resource value: 0x7f040008
+			public const int btnInstellingen = 2130968584;
 			
 			// aapt resource value: 0x7f040003
 			public const int btnInstellingenBlok = 2130968579;
@@ -53,8 +53,8 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 			// aapt resource value: 0x7f040004
 			public const int btnInstellingenTerug = 2130968580;
 			
-			// aapt resource value: 0x7f040008
-			public const int btnNetflix = 2130968584;
+			// aapt resource value: 0x7f040009
+			public const int btnNetflix = 2130968585;
 			
 			// aapt resource value: 0x7f040000
 			public const int btnNetflixInstellingen = 2130968576;
@@ -62,17 +62,20 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 			// aapt resource value: 0x7f040006
 			public const int btnTerugOpenProgram = 2130968582;
 			
-			// aapt resource value: 0x7f040009
-			public const int btnYoutube = 2130968585;
+			// aapt resource value: 0x7f04000a
+			public const int btnYoutube = 2130968586;
 			
 			// aapt resource value: 0x7f040001
 			public const int btnYoutubeInstellingen = 2130968577;
 			
-			// aapt resource value: 0x7f04000a
-			public const int btnZiggo = 2130968586;
+			// aapt resource value: 0x7f04000b
+			public const int btnZiggo = 2130968587;
 			
 			// aapt resource value: 0x7f040002
 			public const int btnZiggoInstellingen = 2130968578;
+			
+			// aapt resource value: 0x7f040007
+			public const int linearLayout1 = 2130968583;
 			
 			// aapt resource value: 0x7f040005
 			public const int txtOpenProgram = 2130968581;

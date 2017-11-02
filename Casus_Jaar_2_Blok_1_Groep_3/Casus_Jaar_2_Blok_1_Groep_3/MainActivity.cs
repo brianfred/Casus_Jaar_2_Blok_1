@@ -7,20 +7,26 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
     [Activity(Label = "Casus_Jaar_2_Blok_1_Groep_3", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        private Button btnMenuNetflix;
+        private Button btnMenuZiggo;
+        private Button btnMenuYoutube;
+        private Button btnMenuInstellingen;
+        private Button btnTerugInst;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.LayoutMenu);
-
+            SetContentView(Resource.Layout.main); //LayoutMenu);
+            
             btnMenuNetflix = FindViewById<Button>(Resource.Id.btnNetflix);
             btnMenuNetflix.Click += delegate
             {
                 string program = "Netflix";
                 openProgram(program);
             };
-
+            
             btnMenuYoutube = FindViewById<Button>(Resource.Id.btnYoutube);
             btnMenuYoutube.Click += delegate
             {
@@ -38,18 +44,19 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             btnMenuInstellingen = FindViewById<Button>(Resource.Id.btnInstellingen);
             {
                 openInstellingen();
-            };
+            };            
         }
+        
         private void openProgram(string program)
         {
             SetContentView(Resource.Layout.LayoutOpenProgram);
-            btnTerugOP = FindViewById<Button>(Resource.Id.btnTerugOpenProgram);
+            Button btnTerugOP = FindViewById<Button>(Resource.Id.btnTerugOpenProgram);
             btnTerugOP.Click += delegate
             {
                 SetContentView(Resource.Layout.main);
             };
         }
-
+        
         private void openInstellingen()
         {
             SetContentView(Resource.Layout.LayoutInstellingen);
@@ -59,7 +66,6 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 SetContentView(Resource.Layout.main);
             };
         }
-
     }
 }
 
