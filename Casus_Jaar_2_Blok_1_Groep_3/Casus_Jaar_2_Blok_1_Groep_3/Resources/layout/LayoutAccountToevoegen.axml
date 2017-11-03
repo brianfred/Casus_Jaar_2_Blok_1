@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="Instellingen"
+        android:layout_width="100.0dp"
+        android:layout_height="50.0dp"
+        android:id="@+id/btnInstellingenAccountToevoegen"
+        android:layout_marginLeft="500.0dp" />
+    <Button
+        android:text="Menu"
+        android:layout_width="100.0dp"
+        android:layout_height="50.0dp"
+        android:id="@+id/btnTerugNaarMenu"
+        android:layout_marginLeft="400.0dp" />
+    <Button
+        android:text="Netflix"
+        android:layout_width="400.0dp"
+        android:layout_height="200.0dp"
+        android:id="@+id/btnLogoAccount"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginRight="100.0dp"
+        android:layout_marginTop="75.0dp" />
+    <Button
+        android:text="Inloggen"
+        android:layout_width="400.0dp"
+        android:layout_height="100.0dp"
+        android:id="@+id/btnInloggen"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginRight="100.0dp"
+        android:layout_marginTop="600.0dp" />
+    <EditText
+        android:text="Username"
+        android:layout_width="400.0dp"
+        android:layout_height="100.0dp"
+        android:id="@+id/etUsername"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginRight="100.0dp"
+        android:layout_marginTop="300.0dp" />
+    <EditText
+        android:text="Password"
+        android:layout_width="400.0dp"
+        android:layout_height="100.0dp"
+        android:id="@+id/etPassword"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginRight="100.0dp"
+        android:layout_marginTop="400.0dp" />
+</RelativeLayout>

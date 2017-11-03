@@ -15,6 +15,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
         private Button btnAccToevoegen;
         private Button btnAccVerwijderen;
         private Button btnTaalVeranderen;
+        private Button btnFavorieten;
         private string huidigeTaal;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -80,13 +81,13 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             btnAccToevoegen = FindViewById<Button>(Resource.Id.btnAccountToevoegen);
             btnAccToevoegen.Click += delegate
             {
-
+                SetContentView(Resource.Layout.LayoutAccountToevoegen);
             };
 
             btnAccVerwijderen = FindViewById<Button>(Resource.Id.btnAccountVerwijderen);
             btnAccVerwijderen.Click += delegate
             {
-
+                SetContentView(Resource.Layout.LayoutAccountVerwijderen);
             };
 
             btnTaalVeranderen = FindViewById<Button>(Resource.Id.btnTaalVeranderen);
@@ -95,18 +96,22 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 if (huidigeTaal == "Nederlands")
                 {
                     huidigeTaal = "Engels";
+                    btnTaalVeranderen.Text = "Language: English";
                 }
                 else
                 {
                     if (huidigeTaal == "Engels")
                     {
                         huidigeTaal = "Nederlands";
+                        btnTaalVeranderen.Text = "Taal: Nederlands";
                     }
                 }
             };
+            btnFavorieten = FindViewById <Button>(Resource.Id.btnFavorieten);
+            btnFavorieten.Click += delegate
+            {
 
-
-
+            };
         }
     }
 }
