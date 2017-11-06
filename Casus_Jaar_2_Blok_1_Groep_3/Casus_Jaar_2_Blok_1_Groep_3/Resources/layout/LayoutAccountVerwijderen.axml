@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-</LinearLayout>
+    <Button
+        android:text="Instellingen"
+        android:layout_width="100.0dp"
+        android:layout_height="50.0dp"
+        android:id="@+id/btnInstellingenAccountToevoegen"
+        android:layout_marginLeft="500.0dp" />
+    <Button
+        android:text="Menu"
+        android:layout_width="100.0dp"
+        android:layout_height="50.0dp"
+        android:id="@+id/btnTerugNaarMenu"
+        android:layout_marginLeft="400.0dp" />
+    <TextView
+        android:text="Netflix"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="160.0dp"
+        android:layout_height="85.0dp"
+        android:id="@+id/txtNetflixACCV"
+        android:layout_marginLeft="75.0dp"
+        android:layout_marginTop="175.0dp"
+        android:background="@android:color/holo_orange_light"
+        android:backgroundTint="#ff696969" />
+    <TextView
+        android:text="Youtube"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="160.0dp"
+        android:layout_height="85.0dp"
+        android:id="@+id/txtYoutubeACCV"
+        android:layout_marginLeft="365.0dp"
+        android:layout_marginTop="175.0dp"
+        android:background="@android:color/holo_orange_light"
+        android:backgroundTint="#ff696969" />
+    <TextView
+        android:text="Ziggo"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="160.0dp"
+        android:layout_height="85.0dp"
+        android:id="@+id/txtZiggoACCV"
+        android:layout_marginLeft="75.0dp"
+        android:layout_marginTop="475.0dp"
+        android:background="@android:color/holo_orange_light"
+        android:backgroundTint="#ff696969" />
+    <TextView
+        android:text="Account verwijderen"
+        android:layout_width="300.0dp"
+        android:layout_height="50.0dp"
+        android:layout_marginTop="20"
+        android:id="@+id/btnInstellingenAccountToevoegen"
+        android:layout_marginLeft="30.0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:text="Geen Account"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="160.0dp"
+        android:layout_height="55.0dp"
+        android:id="@+id/txtYoutubeAccountVerwijderen"
+        android:layout_marginLeft="365.0dp"
+        android:layout_marginTop="275.0dp"
+        android:backgroundTint="#ffa9a9a9" />
+    <TextView
+        android:text="Geen Account"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="160.0dp"
+        android:layout_height="55.0dp"
+        android:id="@+id/txtNetflixAccountVerwijderen"
+        android:layout_marginLeft="75.0dp"
+        android:layout_marginTop="275.0dp"
+        android:backgroundTint="#ffa9a9a9" />
+    <TextView
+        android:text="Geen Account"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="160.0dp"
+        android:layout_height="55.0dp"
+        android:id="@+id/txtZiggoAccountVerwijderen"
+        android:layout_marginLeft="75.0dp"
+        android:layout_marginTop="575.0dp"
+        android:backgroundTint="#ff808080" />
+</RelativeLayout>
