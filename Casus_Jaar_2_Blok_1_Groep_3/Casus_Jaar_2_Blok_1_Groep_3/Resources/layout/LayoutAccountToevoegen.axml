@@ -6,13 +6,13 @@
         android:text="Instellingen"
         android:layout_width="100.0dp"
         android:layout_height="50.0dp"
-        android:id="@+id/btnInstellingenAccountToevoegen"
+        android:id="@+id/btnInstellingenAccT"
         android:layout_marginLeft="500.0dp" />
     <Button
         android:text="Menu"
         android:layout_width="100.0dp"
         android:layout_height="50.0dp"
-        android:id="@+id/btnTerugNaarMenu"
+        android:id="@+id/btnTerugNaarMenuAccT"
         android:layout_marginLeft="400.0dp" />
     <Button
         android:text="Netflix"

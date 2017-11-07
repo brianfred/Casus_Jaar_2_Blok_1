@@ -6,13 +6,13 @@
         android:text="Instellingen"
         android:layout_width="100.0dp"
         android:layout_height="50.0dp"
-        android:id="@+id/btnInstellingenAccountToevoegen"
+        android:id="@+id/btnInstellingenAccV"
         android:layout_marginLeft="500.0dp" />
     <Button
         android:text="Menu"
         android:layout_width="100.0dp"
         android:layout_height="50.0dp"
-        android:id="@+id/btnTerugNaarMenu"
+        android:id="@+id/btnMenuAccV"
         android:layout_marginLeft="400.0dp" />
     <TextView
         android:text="Netflix"
@@ -20,7 +20,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="160.0dp"
         android:layout_height="85.0dp"
-        android:id="@+id/txtNetflixACCV"
+        android:id="@+id/txtNetflixAccV"
         android:layout_marginLeft="75.0dp"
         android:layout_marginTop="175.0dp"
         android:background="@android:color/holo_orange_light"
