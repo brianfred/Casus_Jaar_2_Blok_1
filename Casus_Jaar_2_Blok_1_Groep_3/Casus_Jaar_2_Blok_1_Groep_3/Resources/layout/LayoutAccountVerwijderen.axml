@@ -51,7 +51,7 @@
         android:text="Account verwijderen"
         android:layout_width="300.0dp"
         android:layout_height="50.0dp"
-        android:layout_marginTop="20"
+        android:layout_marginTop="20.0dp"
         android:id="@+id/btnInstellingenAccountToevoegen"
         android:layout_marginLeft="30.0dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -65,6 +65,13 @@
         android:layout_marginLeft="365.0dp"
         android:layout_marginTop="275.0dp"
         android:backgroundTint="#ffa9a9a9" />
+    <Button
+        android:text="X"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:id="@+id/btnYoutubeAccountVerwijderen"
+        android:layout_marginLeft="523.0dp"
+        android:layout_marginTop="282.0dp" />
     <TextView
         android:text="Geen Account"
         android:gravity="center"
@@ -75,6 +82,13 @@
         android:layout_marginLeft="75.0dp"
         android:layout_marginTop="275.0dp"
         android:backgroundTint="#ffa9a9a9" />
+    <Button
+        android:text="X"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:id="@+id/btnNetflixAccountVerwijderen"
+        android:layout_marginLeft="233.0dp"
+        android:layout_marginTop="282.0dp" />
     <TextView
         android:text="Geen Account"
         android:gravity="center"
@@ -85,4 +99,11 @@
         android:layout_marginLeft="75.0dp"
         android:layout_marginTop="575.0dp"
         android:backgroundTint="#ff808080" />
+    <Button
+        android:text="X"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:id="@+id/btnZiggoAccountVerwijderen"
+        android:layout_marginLeft="233.0dp"
+        android:layout_marginTop="582.0dp" />
 </RelativeLayout>

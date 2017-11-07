@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Favorieten"
+        android:layout_width="300.0dp"
+        android:layout_height="50.0dp"
+        android:layout_marginTop="20.0dp"
+        android:id="@+id/txtFavorieten"
+        android:layout_marginLeft="200.0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@android:dimen/app_icon_size" />
+    <Button
+        android:text="Instellingen"
+        android:layout_width="100.0dp"
+        android:layout_height="50.0dp"
+        android:id="@+id/btnInstellingenAccountToevoegen"
+        android:layout_marginLeft="30.0dp"
+        android:layout_marginTop="10.0dp" />
+    <TextView
+        android:text="Netflix"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="160.0dp"
+        android:layout_height="85.0dp"
+        android:id="@+id/txtNetflixFavorieten"
+        android:layout_marginLeft="30.0dp"
+        android:layout_marginTop="95.0dp"
+        android:textSize="@android:dimen/app_icon_size" />
+    <Button
+        android:text="NetFavoriet1"
+        android:layout_width="150.0dp"
+        android:layout_height="200.0dp"
+        android:id="@+id/btnNetflixFavorieten1"
+        android:layout_marginLeft="40.0dp"
+        android:layout_marginTop="185.0dp" />
+    <Button
+        android:text="NetFavoriet2"
+        android:layout_width="150.0dp"
+        android:layout_height="200.0dp"
+        android:id="@+id/btnNetflixFavorieten2"
+        android:layout_marginLeft="200.0dp"
+        android:layout_marginTop="185.0dp" />
+    <Button
+        android:text="NetFavoriet3"
+        android:layout_width="150.0dp"
+        android:layout_height="200.0dp"
+        android:id="@+id/btnNetflixFavorieten3"
+        android:layout_marginLeft="360.0dp"
+        android:layout_marginTop="185.0dp" />
+    <Button
+        android:text="NetFavoriet4"
+        android:layout_width="150.0dp"
+        android:layout_height="200.0dp"
+        android:id="@+id/btnNetflixFavorieten4"
+        android:layout_marginLeft="520.0dp"
+        android:layout_marginTop="185.0dp" />
+    <TextView
+        android:text="Youtube"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="180.0dp"
+        android:layout_height="85.0dp"
+        android:id="@+id/txtYoutubeFavorieten"
+        android:layout_marginLeft="40.0dp"
+        android:layout_marginTop="395.0dp"
+        android:textSize="@android:dimen/app_icon_size" />
+    <Button
+        android:text="YouFavoriet1"
+        android:layout_width="150.0dp"
+        android:layout_height="200.0dp"
+        android:id="@+id/btnYoutubeFavorieten1"
+        android:layout_marginLeft="40.0dp"
+        android:layout_marginTop="485.0dp" />
+    <Button
+        android:text="YouFavoriet2"
+        android:layout_width="150.0dp"
+        android:layout_height="200.0dp"
+        android:id="@+id/btnYoutubeFavorieten2"
+        android:layout_marginLeft="200.0dp"
+        android:layout_marginTop="485.0dp" />
+    <Button
+        android:text="YouFavoriet3"
+        android:layout_width="150.0dp"
+        android:layout_height="200.0dp"
+        android:id="@+id/btnYoutubeFavorieten3"
+        android:layout_marginLeft="360.0dp"
+        android:layout_marginTop="485.0dp" />
+    <Button
+        android:text="YouFavoriet4"
+        android:layout_width="150.0dp"
+        android:layout_height="200.0dp"
+        android:id="@+id/btnYoutubeFavorieten4"
+        android:layout_marginLeft="520.0dp"
+        android:layout_marginTop="485.0dp" />
+    <TextView
+        android:text="Ziggo"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="140.0dp"
+        android:layout_height="85.0dp"
+        android:id="@+id/txtZiggoFavorieten"
+        android:layout_marginLeft="35.0dp"
+        android:layout_marginTop="695.0dp"
+        android:textSize="@android:dimen/app_icon_size" />
+</RelativeLayout>

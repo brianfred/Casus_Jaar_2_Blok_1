@@ -24,64 +24,65 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.main); //LayoutMenu);
             huidigeTaal = "Nederlands";
-            openMenu();
+            OpenMenu();
         }
 
-        private void openMenu()
+        private void OpenMenu()
         {
             btnMenuNetflix = FindViewById<Button>(Resource.Id.btnNetflix);
             btnMenuNetflix.Click += delegate
             {
                 string program = "Netflix";
-                openProgram(program);
+                OpenProgram(program);
             };
 
             btnMenuYoutube = FindViewById<Button>(Resource.Id.btnYoutube);
             btnMenuYoutube.Click += delegate
             {
                 string program = "Youtube";
-                openProgram(program);
+                OpenProgram(program);
             };
 
             btnMenuZiggo = FindViewById<Button>(Resource.Id.btnZiggo);
             btnMenuZiggo.Click += delegate
             {
                 string program = "Ziggo";
-                openProgram(program);
+                OpenProgram(program);
             };
 
             btnMenuInstellingen = FindViewById<Button>(Resource.Id.btnInstellingen);
             btnMenuInstellingen.Click += delegate
             {
-                openInstellingen();
+                OpenInstellingen();
             };
         }
 
-        private void openProgram(string program)
+        private void OpenProgram(string program)
         {
             SetContentView(Resource.Layout.LayoutOpenProgram);
             Button btnTerugOP = FindViewById<Button>(Resource.Id.btnTerugOpenProgram);
             btnTerugOP.Click += delegate
             {
                 SetContentView(Resource.Layout.main);
-                openMenu();
+                OpenMenu();
             };
         }
         
-        private void openInstellingen()
+        private void OpenInstellingen()
         {
             SetContentView(Resource.Layout.LayoutInstellingen);
             btnTerugInst = FindViewById<Button>(Resource.Id.btnInstellingenTerug);
             btnTerugInst.Click += delegate
             {
                 SetContentView(Resource.Layout.main);
-                openMenu();
+                OpenMenu();
             };
 
             btnAccToevoegen = FindViewById<Button>(Resource.Id.btnAccountToevoegen);
             btnAccToevoegen.Click += delegate
             {
                 SetContentView(Resource.Layout.LayoutAccountToevoegen);
+                
             };
 
             btnAccVerwijderen = FindViewById<Button>(Resource.Id.btnAccountVerwijderen);
