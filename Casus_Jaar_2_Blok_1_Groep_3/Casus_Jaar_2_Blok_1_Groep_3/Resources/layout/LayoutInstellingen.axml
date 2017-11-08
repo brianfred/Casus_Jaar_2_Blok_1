@@ -3,73 +3,44 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <Button
-        android:text="Netflix"
-        android:layout_width="400.0dp"
-        android:layout_height="200.0dp"
-        android:id="@+id/btnNetflixInstellingen"
-        android:layout_marginBottom="5.0dp"
-        android:layout_marginLeft="100.0dp"
-        android:layout_marginRight="100.0dp"
-        android:layout_marginTop="100.0dp" />
-    <Button
-        android:text="Youtube"
-        android:layout_width="400.0dp"
-        android:layout_height="200.0dp"
-        android:id="@+id/btnYoutubeInstellingen"
-        android:layout_marginBottom="5.0dp"
-        android:layout_marginLeft="100.0dp"
-        android:layout_marginRight="100.0dp"
-        android:layout_marginTop="350.0dp" />
-    <Button
-        android:text="Ziggo Go"
-        android:layout_width="400.0dp"
-        android:layout_height="200.0dp"
-        android:id="@+id/btnZiggoInstellingen"
-        android:layout_marginLeft="100.0dp"
-        android:layout_marginRight="100.0dp"
-        android:layout_marginBottom="5.0dp"
-        android:layout_marginTop="600.0dp" />
-    <Button
-        android:text=""
-        android:layout_width="400.0dp"
-        android:layout_height="825.0dp"
-        android:id="@+id/btnInstellingenBlok"
-        android:layout_marginLeft="200.0dp"
-        android:layout_marginRight="0.0dp"
-        android:layout_marginBottom="0.0dp"
-        android:layout_marginTop="0.0dp"
-        android:background="#ffffff" />
-    <Button
         android:text="Instellingen"
         android:layout_width="100.0dp"
         android:layout_height="50.0dp"
         android:id="@+id/btnInstellingenTerug"
-        android:layout_marginLeft="200.0dp" />
+        android:layout_marginLeft="500.0dp" />
     <Button
         android:text="Favorieten"
-        android:layout_width="100.0dp"
-        android:layout_height="50.0dp"
+        android:layout_width="400.0dp"
+        android:layout_height="100.0dp"
         android:id="@+id/btnFavorieten"
-        android:layout_marginLeft="300.0dp" />
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginTop="460.0dp" />
     <Button
         android:text="Account toevoegen"
         android:layout_width="400.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/btnAccountToevoegen"
-        android:layout_marginLeft="200.0dp"
-        android:layout_marginTop="100.0dp" />
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginTop="220.0dp" />
     <Button
         android:text="Account verwijderen"
         android:layout_width="400.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/btnAccountVerwijderen"
-        android:layout_marginLeft="200.0dp"
-        android:layout_marginTop="220.0dp" />
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginTop="340.0dp" />
     <Button
         android:text="Taal: Nederlands"
         android:layout_width="400.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/btnTaalVeranderen"
-        android:layout_marginLeft="200.0dp"
+        android:layout_marginLeft="100.0dp"
         android:layout_marginTop="700.0dp" />
+    <Button
+        android:text="Menu"
+        android:layout_width="400.0dp"
+        android:layout_height="100.0dp"
+        android:id="@+id/btnInstMenu"
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginTop="100.0dp" />
 </RelativeLayout>

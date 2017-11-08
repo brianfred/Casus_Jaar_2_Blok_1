@@ -21,6 +21,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
         private Button btnMenuAccT;
         private Button btnInloggen;
         private Button btnInstellingenAccT;
+        private Button btnInstMenu;
         private Button btnNetflixFavorieten1;
         private Button btnNetflixFavorieten2;
         private Button btnNetflixFavorieten3;
@@ -193,6 +194,12 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             btnFavorieten.Click += delegate
             {
                 Favorieten();
+            };
+
+            btnInstMenu = FindViewById<Button>(Resource.Id.btnInstMenu);
+            btnInstMenu.Click += delegate
+            {
+                OpenMenu();
             };
 
         }

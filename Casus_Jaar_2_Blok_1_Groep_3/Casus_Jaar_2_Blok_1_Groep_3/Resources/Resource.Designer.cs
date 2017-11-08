@@ -44,20 +44,23 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f04002a
-			public const int btnAccountToevoegen = 2130968618;
+			// aapt resource value: 0x7f040026
+			public const int btnAccountToevoegen = 2130968614;
 			
-			// aapt resource value: 0x7f04002b
-			public const int btnAccountVerwijderen = 2130968619;
+			// aapt resource value: 0x7f040027
+			public const int btnAccountVerwijderen = 2130968615;
 			
-			// aapt resource value: 0x7f040029
-			public const int btnFavorieten = 2130968617;
+			// aapt resource value: 0x7f040025
+			public const int btnFavorieten = 2130968613;
 			
 			// aapt resource value: 0x7f040003
 			public const int btnInloggen = 2130968579;
 			
-			// aapt resource value: 0x7f040030
-			public const int btnInstellingen = 2130968624;
+			// aapt resource value: 0x7f040029
+			public const int btnInstMenu = 2130968617;
+			
+			// aapt resource value: 0x7f04002d
+			public const int btnInstellingen = 2130968621;
 			
 			// aapt resource value: 0x7f040000
 			public const int btnInstellingenAccT = 2130968576;
@@ -68,14 +71,11 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 			// aapt resource value: 0x7f04000b
 			public const int btnInstellingenAccountToevoegen = 2130968587;
 			
-			// aapt resource value: 0x7f040027
-			public const int btnInstellingenBlok = 2130968615;
-			
 			// aapt resource value: 0x7f040014
 			public const int btnInstellingenFav = 2130968596;
 			
-			// aapt resource value: 0x7f040028
-			public const int btnInstellingenTerug = 2130968616;
+			// aapt resource value: 0x7f040024
+			public const int btnInstellingenTerug = 2130968612;
 			
 			// aapt resource value: 0x7f040002
 			public const int btnLogoAccount = 2130968578;
@@ -86,8 +86,8 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 			// aapt resource value: 0x7f040013
 			public const int btnMenuFav = 2130968595;
 			
-			// aapt resource value: 0x7f040031
-			public const int btnNetflix = 2130968625;
+			// aapt resource value: 0x7f04002e
+			public const int btnNetflix = 2130968622;
 			
 			// aapt resource value: 0x7f04000f
 			public const int btnNetflixAccountVerwijderen = 2130968591;
@@ -104,20 +104,17 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 			// aapt resource value: 0x7f040019
 			public const int btnNetflixFavorieten4 = 2130968601;
 			
-			// aapt resource value: 0x7f040024
-			public const int btnNetflixInstellingen = 2130968612;
-			
-			// aapt resource value: 0x7f04002c
-			public const int btnTaalVeranderen = 2130968620;
+			// aapt resource value: 0x7f040028
+			public const int btnTaalVeranderen = 2130968616;
 			
 			// aapt resource value: 0x7f040001
 			public const int btnTerugNaarMenuAccT = 2130968577;
 			
-			// aapt resource value: 0x7f04002e
-			public const int btnTerugOpenProgram = 2130968622;
+			// aapt resource value: 0x7f04002b
+			public const int btnTerugOpenProgram = 2130968619;
 			
-			// aapt resource value: 0x7f040032
-			public const int btnYoutube = 2130968626;
+			// aapt resource value: 0x7f04002f
+			public const int btnYoutube = 2130968623;
 			
 			// aapt resource value: 0x7f04000d
 			public const int btnYoutubeAccountVerwijderen = 2130968589;
@@ -134,11 +131,8 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 			// aapt resource value: 0x7f04001e
 			public const int btnYoutubeFavorieten4 = 2130968606;
 			
-			// aapt resource value: 0x7f040025
-			public const int btnYoutubeInstellingen = 2130968613;
-			
-			// aapt resource value: 0x7f040033
-			public const int btnZiggo = 2130968627;
+			// aapt resource value: 0x7f040030
+			public const int btnZiggo = 2130968624;
 			
 			// aapt resource value: 0x7f040011
 			public const int btnZiggoAccountVerwijderen = 2130968593;
@@ -155,17 +149,14 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 			// aapt resource value: 0x7f040023
 			public const int btnZiggoFavorieten4 = 2130968611;
 			
-			// aapt resource value: 0x7f040026
-			public const int btnZiggoInstellingen = 2130968614;
-			
 			// aapt resource value: 0x7f040005
 			public const int etPassword = 2130968581;
 			
 			// aapt resource value: 0x7f040004
 			public const int etUsername = 2130968580;
 			
-			// aapt resource value: 0x7f04002f
-			public const int linearLayout1 = 2130968623;
+			// aapt resource value: 0x7f04002c
+			public const int linearLayout1 = 2130968620;
 			
 			// aapt resource value: 0x7f040012
 			public const int txtFavorieten = 2130968594;
@@ -179,8 +170,8 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 			// aapt resource value: 0x7f040015
 			public const int txtNetflixFavorieten = 2130968597;
 			
-			// aapt resource value: 0x7f04002d
-			public const int txtOpenProgram = 2130968621;
+			// aapt resource value: 0x7f04002a
+			public const int txtOpenProgram = 2130968618;
 			
 			// aapt resource value: 0x7f040009
 			public const int txtYoutubeACCV = 2130968585;
