@@ -13,28 +13,25 @@
         android:textSize="@android:dimen/app_icon_size" />
     <Button
         android:text="Menu"
-        android:layout_width="100.0dp"
-        android:layout_height="50.0dp"
+        android:layout_width="75.0dp"
+        android:layout_height="75.0dp"
         android:id="@+id/btnMenuFav"
-        android:layout_marginLeft="30.0dp"
-        android:layout_marginTop="10.0dp" />
+        android:layout_marginLeft="450.0dp" />
     <Button
-        android:text="Instellingen"
-        android:layout_width="100.0dp"
-        android:layout_height="50.0dp"
+        android:text=""
+        android:layout_width="75.0dp"
+        android:layout_height="75.0dp"
         android:id="@+id/btnInstellingenFav"
-        android:layout_marginLeft="470.0dp"
-        android:layout_marginTop="10.0dp" />
+        android:layout_marginLeft="525.0dp"
+        android:background="@drawable/instellingen" />
     <TextView
-        android:text="Netflix"
-        android:gravity="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
         android:layout_width="160.0dp"
         android:layout_height="85.0dp"
         android:id="@+id/txtNetflixFavorieten"
-        android:layout_marginLeft="30.0dp"
+        android:layout_marginLeft="40.0dp"
         android:layout_marginTop="95.0dp"
-        android:textSize="@android:dimen/app_icon_size" />
+        android:background="@drawable/netflix" />
     <Button
         android:text="NetFavoriet1"
         android:layout_width="150.0dp"
@@ -64,15 +61,13 @@
         android:layout_marginLeft="520.0dp"
         android:layout_marginTop="185.0dp" />
     <TextView
-        android:text="Youtube"
-        android:gravity="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="180.0dp"
+        android:text=""
+        android:layout_width="160.0dp"
         android:layout_height="85.0dp"
         android:id="@+id/txtYoutubeFavorieten"
         android:layout_marginLeft="40.0dp"
         android:layout_marginTop="345.0dp"
-        android:textSize="@android:dimen/app_icon_size" />
+        android:background="@drawable/youtube3" />
     <Button
         android:text="YouFavoriet1"
         android:layout_width="150.0dp"
@@ -102,15 +97,13 @@
         android:layout_marginLeft="520.0dp"
         android:layout_marginTop="435.0dp" />
     <TextView
-        android:text="Ziggo"
-        android:gravity="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="140.0dp"
+        android:text=""
+        android:layout_width="160.0dp"
         android:layout_height="85.0dp"
         android:id="@+id/txtZiggoFavorieten"
-        android:layout_marginLeft="35.0dp"
+        android:layout_marginLeft="40.0dp"
         android:layout_marginTop="595.0dp"
-        android:textSize="@android:dimen/app_icon_size" />
+        android:background="@drawable/ziggo4" />
     <Button
         android:text="ZigFavoriet1"
         android:layout_width="150.0dp"

@@ -41,155 +41,231 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 			}
 		}
 		
+		public partial class Drawable
+		{
+			
+			// aapt resource value: 0x7f020000
+			public const int Instellingen = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Netflix = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int TerugKnnop2 = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int TerugKnop = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int TerugKnop3 = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int Terugknop4 = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int TerugKnop5 = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int Youtube = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int Youtube2 = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int Youtube3 = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int Ziggo = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int Ziggo2 = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int Ziggo3 = 2130837516;
+			
+			// aapt resource value: 0x7f02000d
+			public const int Ziggo4 = 2130837517;
+			
+			static Drawable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Drawable()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040026
-			public const int btnAccountToevoegen = 2130968614;
+			// aapt resource value: 0x7f050027
+			public const int btnAccountToevoegen = 2131034151;
 			
-			// aapt resource value: 0x7f040027
-			public const int btnAccountVerwijderen = 2130968615;
+			// aapt resource value: 0x7f050028
+			public const int btnAccountVerwijderen = 2131034152;
 			
-			// aapt resource value: 0x7f040025
-			public const int btnFavorieten = 2130968613;
+			// aapt resource value: 0x7f050025
+			public const int btnFavorieten = 2131034149;
 			
-			// aapt resource value: 0x7f040003
-			public const int btnInloggen = 2130968579;
+			// aapt resource value: 0x7f050003
+			public const int btnInloggen = 2131034115;
 			
-			// aapt resource value: 0x7f040029
-			public const int btnInstMenu = 2130968617;
+			// aapt resource value: 0x7f05002a
+			public const int btnInstMenu = 2131034154;
 			
-			// aapt resource value: 0x7f04002d
-			public const int btnInstellingen = 2130968621;
+			// aapt resource value: 0x7f050034
+			public const int btnInstellingen = 2131034164;
 			
-			// aapt resource value: 0x7f040000
-			public const int btnInstellingenAccT = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int btnInstellingenAccT = 2131034112;
 			
-			// aapt resource value: 0x7f040006
-			public const int btnInstellingenAccV = 2130968582;
+			// aapt resource value: 0x7f050006
+			public const int btnInstellingenAccV = 2131034118;
 			
-			// aapt resource value: 0x7f04000b
-			public const int btnInstellingenAccountToevoegen = 2130968587;
+			// aapt resource value: 0x7f05000b
+			public const int btnInstellingenAccountToevoegen = 2131034123;
 			
-			// aapt resource value: 0x7f040014
-			public const int btnInstellingenFav = 2130968596;
+			// aapt resource value: 0x7f050014
+			public const int btnInstellingenFav = 2131034132;
 			
-			// aapt resource value: 0x7f040024
-			public const int btnInstellingenTerug = 2130968612;
+			// aapt resource value: 0x7f05002d
+			public const int btnInstellingenSearch = 2131034157;
 			
-			// aapt resource value: 0x7f040002
-			public const int btnLogoAccount = 2130968578;
+			// aapt resource value: 0x7f050024
+			public const int btnInstellingenTerug = 2131034148;
 			
-			// aapt resource value: 0x7f040007
-			public const int btnMenuAccV = 2130968583;
+			// aapt resource value: 0x7f050002
+			public const int btnLogoAccount = 2131034114;
 			
-			// aapt resource value: 0x7f040013
-			public const int btnMenuFav = 2130968595;
+			// aapt resource value: 0x7f050007
+			public const int btnMenuAccV = 2131034119;
 			
-			// aapt resource value: 0x7f04002e
-			public const int btnNetflix = 2130968622;
+			// aapt resource value: 0x7f050013
+			public const int btnMenuFav = 2131034131;
 			
-			// aapt resource value: 0x7f04000f
-			public const int btnNetflixAccountVerwijderen = 2130968591;
+			// aapt resource value: 0x7f05002e
+			public const int btnMenuSearch = 2131034158;
 			
-			// aapt resource value: 0x7f040016
-			public const int btnNetflixFavorieten1 = 2130968598;
+			// aapt resource value: 0x7f050035
+			public const int btnNetflix = 2131034165;
 			
-			// aapt resource value: 0x7f040017
-			public const int btnNetflixFavorieten2 = 2130968599;
+			// aapt resource value: 0x7f05000f
+			public const int btnNetflixAccountVerwijderen = 2131034127;
 			
-			// aapt resource value: 0x7f040018
-			public const int btnNetflixFavorieten3 = 2130968600;
+			// aapt resource value: 0x7f050016
+			public const int btnNetflixFavorieten1 = 2131034134;
 			
-			// aapt resource value: 0x7f040019
-			public const int btnNetflixFavorieten4 = 2130968601;
+			// aapt resource value: 0x7f050017
+			public const int btnNetflixFavorieten2 = 2131034135;
 			
-			// aapt resource value: 0x7f040028
-			public const int btnTaalVeranderen = 2130968616;
+			// aapt resource value: 0x7f050018
+			public const int btnNetflixFavorieten3 = 2131034136;
 			
-			// aapt resource value: 0x7f040001
-			public const int btnTerugNaarMenuAccT = 2130968577;
+			// aapt resource value: 0x7f050019
+			public const int btnNetflixFavorieten4 = 2131034137;
 			
-			// aapt resource value: 0x7f04002b
-			public const int btnTerugOpenProgram = 2130968619;
+			// aapt resource value: 0x7f050029
+			public const int btnTaalVeranderen = 2131034153;
 			
-			// aapt resource value: 0x7f04002f
-			public const int btnYoutube = 2130968623;
+			// aapt resource value: 0x7f050001
+			public const int btnTerugNaarMenuAccT = 2131034113;
 			
-			// aapt resource value: 0x7f04000d
-			public const int btnYoutubeAccountVerwijderen = 2130968589;
+			// aapt resource value: 0x7f05002c
+			public const int btnTerugOpenProgram = 2131034156;
 			
-			// aapt resource value: 0x7f04001b
-			public const int btnYoutubeFavorieten1 = 2130968603;
+			// aapt resource value: 0x7f050036
+			public const int btnYoutube = 2131034166;
 			
-			// aapt resource value: 0x7f04001c
-			public const int btnYoutubeFavorieten2 = 2130968604;
+			// aapt resource value: 0x7f05000d
+			public const int btnYoutubeAccountVerwijderen = 2131034125;
 			
-			// aapt resource value: 0x7f04001d
-			public const int btnYoutubeFavorieten3 = 2130968605;
+			// aapt resource value: 0x7f05001b
+			public const int btnYoutubeFavorieten1 = 2131034139;
 			
-			// aapt resource value: 0x7f04001e
-			public const int btnYoutubeFavorieten4 = 2130968606;
+			// aapt resource value: 0x7f05001c
+			public const int btnYoutubeFavorieten2 = 2131034140;
 			
-			// aapt resource value: 0x7f040030
-			public const int btnZiggo = 2130968624;
+			// aapt resource value: 0x7f05001d
+			public const int btnYoutubeFavorieten3 = 2131034141;
 			
-			// aapt resource value: 0x7f040011
-			public const int btnZiggoAccountVerwijderen = 2130968593;
+			// aapt resource value: 0x7f05001e
+			public const int btnYoutubeFavorieten4 = 2131034142;
 			
-			// aapt resource value: 0x7f040020
-			public const int btnZiggoFavorieten1 = 2130968608;
+			// aapt resource value: 0x7f050037
+			public const int btnZiggo = 2131034167;
 			
-			// aapt resource value: 0x7f040021
-			public const int btnZiggoFavorieten2 = 2130968609;
+			// aapt resource value: 0x7f050011
+			public const int btnZiggoAccountVerwijderen = 2131034129;
 			
-			// aapt resource value: 0x7f040022
-			public const int btnZiggoFavorieten3 = 2130968610;
+			// aapt resource value: 0x7f050020
+			public const int btnZiggoFavorieten1 = 2131034144;
 			
-			// aapt resource value: 0x7f040023
-			public const int btnZiggoFavorieten4 = 2130968611;
+			// aapt resource value: 0x7f050021
+			public const int btnZiggoFavorieten2 = 2131034145;
 			
-			// aapt resource value: 0x7f040005
-			public const int etPassword = 2130968581;
+			// aapt resource value: 0x7f050022
+			public const int btnZiggoFavorieten3 = 2131034146;
 			
-			// aapt resource value: 0x7f040004
-			public const int etUsername = 2130968580;
+			// aapt resource value: 0x7f050023
+			public const int btnZiggoFavorieten4 = 2131034147;
 			
-			// aapt resource value: 0x7f04002c
-			public const int linearLayout1 = 2130968620;
+			// aapt resource value: 0x7f050026
+			public const int btnZoeken = 2131034150;
 			
-			// aapt resource value: 0x7f040012
-			public const int txtFavorieten = 2130968594;
+			// aapt resource value: 0x7f050032
+			public const int btnZoekenZoeken = 2131034162;
 			
-			// aapt resource value: 0x7f040008
-			public const int txtNetflixAccV = 2130968584;
+			// aapt resource value: 0x7f050005
+			public const int etPassword = 2131034117;
 			
-			// aapt resource value: 0x7f04000e
-			public const int txtNetflixAccountVerwijderen = 2130968590;
+			// aapt resource value: 0x7f050004
+			public const int etUsername = 2131034116;
 			
-			// aapt resource value: 0x7f040015
-			public const int txtNetflixFavorieten = 2130968597;
+			// aapt resource value: 0x7f050030
+			public const int etZoekveld = 2131034160;
 			
-			// aapt resource value: 0x7f04002a
-			public const int txtOpenProgram = 2130968618;
+			// aapt resource value: 0x7f050033
+			public const int linearLayout1 = 2131034163;
 			
-			// aapt resource value: 0x7f040009
-			public const int txtYoutubeACCV = 2130968585;
+			// aapt resource value: 0x7f050012
+			public const int txtFavorieten = 2131034130;
 			
-			// aapt resource value: 0x7f04000c
-			public const int txtYoutubeAccountVerwijderen = 2130968588;
+			// aapt resource value: 0x7f05002f
+			public const int txtHoofdSearch = 2131034159;
 			
-			// aapt resource value: 0x7f04001a
-			public const int txtYoutubeFavorieten = 2130968602;
+			// aapt resource value: 0x7f050008
+			public const int txtNetflixAccV = 2131034120;
 			
-			// aapt resource value: 0x7f04000a
-			public const int txtZiggoACCV = 2130968586;
+			// aapt resource value: 0x7f05000e
+			public const int txtNetflixAccountVerwijderen = 2131034126;
 			
-			// aapt resource value: 0x7f040010
-			public const int txtZiggoAccountVerwijderen = 2130968592;
+			// aapt resource value: 0x7f050015
+			public const int txtNetflixFavorieten = 2131034133;
 			
-			// aapt resource value: 0x7f04001f
-			public const int txtZiggoFavorieten = 2130968607;
+			// aapt resource value: 0x7f05002b
+			public const int txtOpenProgram = 2131034155;
+			
+			// aapt resource value: 0x7f050031
+			public const int txtSearch = 2131034161;
+			
+			// aapt resource value: 0x7f050009
+			public const int txtYoutubeACCV = 2131034121;
+			
+			// aapt resource value: 0x7f05000c
+			public const int txtYoutubeAccountVerwijderen = 2131034124;
+			
+			// aapt resource value: 0x7f05001a
+			public const int txtYoutubeFavorieten = 2131034138;
+			
+			// aapt resource value: 0x7f05000a
+			public const int txtZiggoACCV = 2131034122;
+			
+			// aapt resource value: 0x7f050010
+			public const int txtZiggoAccountVerwijderen = 2131034128;
+			
+			// aapt resource value: 0x7f05001f
+			public const int txtZiggoFavorieten = 2131034143;
 			
 			static Id()
 			{
@@ -204,23 +280,26 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f020000
-			public const int LayoutAccountToevoegen = 2130837504;
+			// aapt resource value: 0x7f030000
+			public const int LayoutAccountToevoegen = 2130903040;
 			
-			// aapt resource value: 0x7f020001
-			public const int LayoutAccountVerwijderen = 2130837505;
+			// aapt resource value: 0x7f030001
+			public const int LayoutAccountVerwijderen = 2130903041;
 			
-			// aapt resource value: 0x7f020002
-			public const int LayoutFavorieten = 2130837506;
+			// aapt resource value: 0x7f030002
+			public const int LayoutFavorieten = 2130903042;
 			
-			// aapt resource value: 0x7f020003
-			public const int LayoutInstellingen = 2130837507;
+			// aapt resource value: 0x7f030003
+			public const int LayoutInstellingen = 2130903043;
 			
-			// aapt resource value: 0x7f020004
-			public const int LayoutOpenProgram = 2130837508;
+			// aapt resource value: 0x7f030004
+			public const int LayoutOpenProgram = 2130903044;
 			
-			// aapt resource value: 0x7f020005
-			public const int main = 2130837509;
+			// aapt resource value: 0x7f030005
+			public const int LayoutSearch = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int main = 2130903046;
 			
 			static Layout()
 			{
@@ -235,8 +314,8 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int app_name = 2130903040;
+			// aapt resource value: 0x7f040000
+			public const int app_name = 2130968576;
 			
 			static String()
 			{

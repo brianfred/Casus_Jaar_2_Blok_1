@@ -7,6 +7,10 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
     [Activity(Label = "Casus_Jaar_2_Blok_1_Groep_3", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        private Button btnZoeken;
+        private Button btnZoekenZoeken;
+        private TextView txtSearch;
+        private EditText etZoekveld;
         private Button btnMenuNetflix;
         private Button btnMenuZiggo;
         private Button btnMenuYoutube;
