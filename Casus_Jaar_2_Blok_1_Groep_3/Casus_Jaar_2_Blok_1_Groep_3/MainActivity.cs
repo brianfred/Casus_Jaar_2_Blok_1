@@ -7,8 +7,18 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
     [Activity(Label = "Casus_Jaar_2_Blok_1_Groep_3", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        private TextView txtOuderZicht;
+        private Button btnMenuOuder;
+        private Button btnInstellingenOuder;
+        private Button btnOuderActiveren;
+        private Button btnOuderDeactiveren;
+        private Button btnOuderlijkToezicht;
+        private EditText etOuderCode;
+        private Button btnSearchBack;
         private Button btnZoeken;
         private Button btnZoekenZoeken;
+        private Button btnInstellingenSearch;
+        private Button btnMenuSearch;
         private TextView txtSearch;
         private EditText etZoekveld;
         private Button btnMenuNetflix;
@@ -58,6 +68,8 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
         private string ZiggoUsername;
         private string ZiggoPassword;
         private string LogoAccountMaken;
+        private string Zoeken;
+        private string dezeCode;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -153,6 +165,16 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 {
                     AccVerwijderen();
                 }
+
+                if (PaginaVandaan == "Zoek")
+                {
+                    startZoeken();
+                }
+
+                if (PaginaVandaan == "Ouder")
+                {
+                    OuderZicht();
+                }
                     
             };
 
@@ -160,6 +182,12 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             btnAccToevoegen.Click += delegate
             {
                 AccToevoegen();
+            };
+
+            btnOuderlijkToezicht = FindViewById<Button>(Resource.Id.btnOuderlijkToezicht);
+            btnOuderlijkToezicht.Click += delegate
+            {
+                OuderZicht();
             };
 
             btnAccVerwijderen = FindViewById<Button>(Resource.Id.btnAccountVerwijderen);
@@ -428,6 +456,82 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 program = "Ziggo Go Fav 4";
                 OpenProgram(program, komtVanProgram);
             };
+            btnZoeken = FindViewById<Button>(Resource.Id.btnZoeken);
+            btnZoeken.Click += delegate
+            {
+                startZoeken();
+            };
+         }
+        private void startZoeken()
+        {
+            btnSearchBack = FindViewById<Button>(Resource.Id.btnSearchBack);
+            btnZoekenZoeken = FindViewById<Button>(Resource.Id.btnZoekenZoeken);
+            btnMenuSearch = FindViewById<Button>(Resource.Id.btnMenuSearch);
+            btnInstellingenSearch = FindViewById<Button>(Resource.Id.btnInstellingenSearch);
+            etZoekveld = FindViewById<EditText>(Resource.Id.etZoekveld);
+            txtSearch = FindViewById<TextView>(Resource.Id.txtSearch);
+            Zoeken = ""; 
+            btnSearchBack.Click += delegate
+            {
+                Favorieten();
+            };
+            btnZoekenZoeken.Click += delegate
+            {
+                if (etZoekveld.Text != "Zoeken")
+                {
+                    Zoeken = etZoekveld.Text;
+                    txtSearch.Text = string.Format("{0} Wordt nu heen gezocht", Zoeken );
+                }
+            };
+
+            btnMenuSearch.Click += delegate
+            {
+                OpenMenu();
+            };
+
+            btnInstellingenSearch.Click += delegate
+            {
+                string PaginaVandaan = "Zoek";
+                OpenInstellingen(PaginaVandaan);
+            };
+
+        }
+
+        private void OuderZicht()
+        {
+            btnMenuOuder = FindViewById<Button>(Resource.Id.btnMenuOuder);
+            btnInstellingenOuder = FindViewById<Button>(Resource.Id.btnInstellingenOuder);
+            btnOuderActiveren = FindViewById<Button>(Resource.Id.btnOuderActiveren);
+            btnOuderDeactiveren = FindViewById<Button>(Resource.Id.btnOuderDeactiveren);
+            etOuderCode = FindViewById<EditText>(Resource.Id.etOuderCode);
+            txtOuderZicht = FindViewById<TextView>(Resource.Id.txtOuderZicht);
+            dezeCode = "";
+            btnMenuOuder.Click += delegate
+            {
+                OpenMenu();
+            };
+            btnInstellingenOuder.Click += delegate
+            {
+                string PaginaVandaan = "Ouder";
+                OpenInstellingen(PaginaVandaan);
+            };
+            btnOuderActiveren.Click += delegate
+            {
+                if (etOuderCode.Text != "Code" && etOuderCode.Text != "")
+                {
+                    dezeCode = etOuderCode.Text;
+                    txtOuderZicht.Text = string.Format("De code {0} is nu geactiveerd.", dezeCode);
+                }
+            };
+            btnOuderDeactiveren.Click += delegate
+            {
+                if (etOuderCode.Text != "Code" && etOuderCode.Text != "")
+                {
+                    dezeCode = etOuderCode.Text;
+                    txtOuderZicht.Text = string.Format("De code {0} is nu gedeactiveerd", dezeCode);
+                }
+            };
+
         }
     }
 }

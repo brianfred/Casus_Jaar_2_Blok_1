@@ -6,51 +6,52 @@
         android:text=""
         android:layout_width="75.0dp"
         android:layout_height="75.0dp"
-        android:id="@+id/btnInstellingenSearch"
+        android:id="@+id/btnInstellingenOuder"
         android:layout_marginLeft="525.0dp"
         android:background="@drawable/instellingen" />
-    <Button
-        android:text=""
-        android:layout_width="75.0dp"
-        android:layout_height="75.0dp"
-        android:id="@+id/btnSearchBack"
-        android:background="@drawable/terugknop5" />
     <Button
         android:text="Menu"
         android:layout_width="75.0dp"
         android:layout_height="75.0dp"
-        android:id="@+id/btnMenuSearch"
+        android:id="@+id/btnMenuOuder"
         android:layout_marginLeft="450.0dp" />
     <TextView
-        android:text="Zoeken"
+        android:text="Ouderlijk Toezicht"
         android:layout_width="300.0dp"
-        android:layout_height="50.0dp"
+        android:layout_height="125.0dp"
         android:layout_marginTop="20.0dp"
-        android:id="@+id/txtHoofdSearch"
+        android:id="@+id/txtOuderZicht"
         android:layout_marginLeft="200.0dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="@android:dimen/app_icon_size" />
     <EditText
-        android:text="Zoeken"
+        android:text="Code"
         android:layout_width="400.0dp"
         android:layout_height="100.0dp"
-        android:id="@+id/etZoekveld"
+        android:id="@+id/etOuderCode"
         android:layout_marginBottom="5.0dp"
         android:layout_marginLeft="100.0dp"
         android:layout_marginRight="100.0dp"
-        android:layout_marginTop="150.0dp" />
+        android:layout_marginTop="250.0dp" />
+    <Button
+        android:text="Activeren"
+        android:layout_width="200.0dp"
+        android:layout_height="100.0dp"
+        android:id="@+id/btnOuderActiveren"
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginTop="375.0dp" />
+    <Button
+        android:text="Deactiveren"
+        android:layout_width="200.0dp"
+        android:layout_height="100.0dp"
+        android:id="@+id/btnOuderDeactiveren"
+        android:layout_marginLeft="350.0dp"
+        android:layout_marginTop="375.0dp" />
     <TextView
         android:text=""
         android:layout_width="500.0dp"
         android:layout_height="700.0dp"
-        android:layout_marginTop="350.0dp"
+        android:layout_marginTop="500.0dp"
         android:id="@+id/txtSearch"
         android:layout_marginLeft="50.0dp" />
-    <Button
-        android:text="Zoeken"
-        android:layout_width="100.0dp"
-        android:layout_height="50.0dp"
-        android:id="@+id/btnZoekenZoeken"
-        android:layout_marginLeft="100.0dp"
-        android:layout_marginTop="275.0dp" />
 </RelativeLayout>

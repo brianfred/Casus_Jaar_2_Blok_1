@@ -132,4 +132,11 @@
         android:id="@+id/btnZiggoFavorieten4"
         android:layout_marginLeft="520.0dp"
         android:layout_marginTop="685.0dp" />
+    <Button
+        android:text="Zoeken"
+        android:layout_width="160.0dp"
+        android:layout_height="75.0dp"
+        android:id="@+id/btnZoeken"
+        android:layout_marginLeft="40.0dp"
+        android:layout_marginTop="  15.0dp" />
 </RelativeLayout>
