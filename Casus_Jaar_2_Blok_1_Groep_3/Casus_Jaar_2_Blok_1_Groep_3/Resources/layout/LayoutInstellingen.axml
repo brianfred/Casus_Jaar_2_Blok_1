@@ -9,46 +9,94 @@
         android:id="@+id/btnInstellingenTerug"
         android:layout_marginLeft="525.0dp"
         android:background="@drawable/terugknop5" />
+    <TextView
+        android:text=""
+        android:layout_width="100.0dp"
+        android:layout_height="100.0dp"
+        android:layout_marginLeft="50.0dp"
+        android:layout_marginTop="220.0dp"
+        android:id="@+id/txtFavorietenIcoonMenu"
+        android:background="@drawable/favorite" />
     <Button
         android:text="Favorieten"
-        android:layout_width="400.0dp"
+        android:layout_width="325.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/btnFavorieten"
-        android:layout_marginLeft="100.0dp"
+        android:layout_marginLeft="175.0dp"
         android:layout_marginTop="220.0dp" />
+    <TextView
+        android:text=""
+        android:layout_width="100.0dp"
+        android:layout_height="100.0dp"
+        android:layout_marginLeft="50.0dp"
+        android:layout_marginTop="340.0dp"
+        android:id="@+id/txtAccAddIconMenu"
+        android:background="@drawable/UserAdd" />
     <Button
         android:text="Account toevoegen"
-        android:layout_width="400.0dp"
+        android:layout_width="325.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/btnAccountToevoegen"
-        android:layout_marginLeft="100.0dp"
+        android:layout_marginLeft="175.0dp"
         android:layout_marginTop="340.0dp" />
+    <TextView
+        android:text=""
+        android:layout_width="100.0dp"
+        android:layout_height="100.0dp"
+        android:layout_marginLeft="50.0dp"
+        android:layout_marginTop="460.0dp"
+        android:id="@+id/txtDelAccIconMenu"
+        android:background="@drawable/accountdeleteicon" />
     <Button
         android:text="Account verwijderen"
-        android:layout_width="400.0dp"
+        android:layout_width="325.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/btnAccountVerwijderen"
-        android:layout_marginLeft="100.0dp"
+        android:layout_marginLeft="175.0dp"
         android:layout_marginTop="460.0dp" />
+    <TextView
+        android:text=""
+        android:layout_width="100.0dp"
+        android:layout_height="100.0dp"
+        android:layout_marginLeft="50.0dp"
+        android:layout_marginTop="580.0dp"
+        android:id="@+id/txtParentVisionIconMenu"
+        android:background="@drawable/ParentVision" />
     <Button
         android:text="Ouderlijk Toezicht"
-        android:layout_width="400.0dp"
+        android:layout_width="325.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/btnOuderlijkToezicht"
-        android:layout_marginLeft="100.0dp"
+        android:layout_marginLeft="175.0dp"
         android:layout_marginTop="580.0dp" />
+    <TextView
+        android:text=""
+        android:layout_width="100.0dp"
+        android:layout_height="100.0dp"
+        android:layout_marginLeft="50.0dp"
+        android:layout_marginTop="700.0dp"
+        android:id="@+id/txtFlagIconMenu"
+        android:background="@drawable/DutchFlag" />
     <Button
         android:text="Taal: Nederlands"
-        android:layout_width="400.0dp"
+        android:layout_width="325.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/btnTaalVeranderen"
-        android:layout_marginLeft="100.0dp"
+        android:layout_marginLeft="175.0dp"
         android:layout_marginTop="700.0dp" />
+    <TextView
+        android:text=""
+        android:layout_width="100.0dp"
+        android:layout_height="100.0dp"
+        android:layout_marginLeft="50.0dp"
+        android:layout_marginTop="100.0dp"
+        android:id="@+id/txtHomeIcoonMenu"
+        android:background="@drawable/home" />
     <Button
-        android:text="Menu"
-        android:layout_width="400.0dp"
+        android:text="Startpagina"
+        android:layout_width="325.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/btnInstMenu"
-        android:layout_marginLeft="100.0dp"
+        android:layout_marginLeft="175.0dp"
         android:layout_marginTop="100.0dp" />
 </RelativeLayout>

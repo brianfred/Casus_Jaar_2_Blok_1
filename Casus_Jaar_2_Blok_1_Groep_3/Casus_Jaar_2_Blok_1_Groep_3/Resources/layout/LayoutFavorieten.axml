@@ -12,11 +12,12 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="@android:dimen/app_icon_size" />
     <Button
-        android:text="Menu"
+        android:text=""
         android:layout_width="75.0dp"
         android:layout_height="75.0dp"
         android:id="@+id/btnMenuFav"
-        android:layout_marginLeft="450.0dp" />
+        android:layout_marginLeft="450.0dp"
+        android:background="@drawable/home" />
     <Button
         android:text=""
         android:layout_width="75.0dp"

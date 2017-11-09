@@ -7,6 +7,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
     [Activity(Label = "Casus_Jaar_2_Blok_1_Groep_3", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        private TextView txtFlagIconMenu;
         private TextView txtOuderZicht;
         private Button btnMenuOuder;
         private Button btnInstellingenOuder;
@@ -57,6 +58,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
         private TextView txtNetflixAcc;
         private TextView txtYoutubeAcc;
         private TextView txtZiggoAcc;
+        private TextView txtCode;
         private TextView txtOpenProgram;
         private EditText etUsername;
         private EditText etPassword;
@@ -139,7 +141,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 }
             };
         }
-        
+
         private void OpenInstellingen(string PaginaVandaan)
         {
             SetContentView(Resource.Layout.LayoutInstellingen);
@@ -147,35 +149,23 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             btnTerugInst.Click += delegate
             {
                 if (PaginaVandaan == "Menu")
-                {
                     OpenMenu();
-                }
 
                 if (PaginaVandaan == "Fav")
-                {
                     Favorieten();
-                }
 
                 if (PaginaVandaan == "AccT")
-                {
                     AccToevoegen();
-                }
 
                 if (PaginaVandaan == "AccV")
-                {
                     AccVerwijderen();
-                }
 
                 if (PaginaVandaan == "Zoek")
-                {
                     startZoeken();
-                }
 
                 if (PaginaVandaan == "Ouder")
-                {
                     OuderZicht();
-                }
-                    
+
             };
 
             btnAccToevoegen = FindViewById<Button>(Resource.Id.btnAccountToevoegen);
@@ -196,37 +186,38 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 AccVerwijderen();
             };
             btnTaalVeranderen = FindViewById<Button>(Resource.Id.btnTaalVeranderen);
+            txtFlagIconMenu = FindViewById<TextView>(Resource.Id.txtFlagIconMenu);
+
+            btnTaalVeranderen.Text = string.Format("Language: {0}", huidigeTaal);
+
             if (huidigeTaal == "Nederlands")
             {
-                btnTaalVeranderen.Text = string.Format("Taal: {0}", huidigeTaal);
+                txtFlagIconMenu.SetBackgroundResource(Resource.Drawable.DutchFlag);
             }
-            
-            if (huidigeTaal == "English")
+            else if (huidigeTaal == "English")
             {
-                btnTaalVeranderen.Text = string.Format("Language: {0}", huidigeTaal);
+                txtFlagIconMenu.SetBackgroundResource(Resource.Drawable.EnglishFlag);
             }
+
             btnTaalVeranderen.Click += delegate
             {
                 if (huidigeTaal == "Nederlands")
                 {
                     huidigeTaal = "English";
                     btnTaalVeranderen.Text = string.Format("Language: {0}", huidigeTaal);
+                    txtFlagIconMenu.SetBackgroundResource(Resource.Drawable.EnglishFlag);
                 }
-                else
+                else if (huidigeTaal == "English")
                 {
-                    if (huidigeTaal == "English")
-                    {
-                        huidigeTaal = "Nederlands";
-                        btnTaalVeranderen.Text = string.Format("Taal: {0}", huidigeTaal);
-                    }
+                    huidigeTaal = "Nederlands";
+                    btnTaalVeranderen.Text = string.Format("Taal: {0}", huidigeTaal);
+                    txtFlagIconMenu.SetBackgroundResource(Resource.Drawable.DutchFlag);
                 }
-                
+
             };
-            btnFavorieten = FindViewById <Button>(Resource.Id.btnFavorieten);
-            btnFavorieten.Click += delegate
-            {
-                Favorieten();
-            };
+
+            btnFavorieten = FindViewById<Button>(Resource.Id.btnFavorieten);
+            btnFavorieten.Click += delegate { Favorieten(); };
 
             btnInstMenu = FindViewById<Button>(Resource.Id.btnInstMenu);
             btnInstMenu.Click += delegate
@@ -235,6 +226,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             };
 
         }
+
         private void AccToevoegen()
         {
             SetContentView(Resource.Layout.LayoutAccountToevoegen);
@@ -244,8 +236,6 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             etUsername = FindViewById<EditText>(Resource.Id.etUsername);
             etPassword = FindViewById<EditText>(Resource.Id.etPassword);
             btnInloggen = FindViewById<Button>(Resource.Id.btnInloggen);
-            etUsername.Text = "Username";
-            etPassword.Text = "Password";
             btnLogoAccount.Text = string.Format("{0}", LogoAccountMaken);
             btnInstellingenAccT.Click += delegate
             {
@@ -264,51 +254,45 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 {
                     LogoAccountMaken = "Youtube";
                 }
-                else
+                else if (LogoAccountMaken == "Youtube")
                 {
-                    if (LogoAccountMaken == "Youtube")
-                    {
-                        LogoAccountMaken = "Ziggo";
-                    }
-                    else
-                    {
-                        if (LogoAccountMaken == "Ziggo")
-                        {
-                            LogoAccountMaken = "Netflix";
-                        }
-                    }
+                    LogoAccountMaken = "Ziggo";
+                }
+                else if (LogoAccountMaken == "Ziggo")
+                {
+                    LogoAccountMaken = "Netflix";
                 }
                 btnLogoAccount.Text = string.Format("{0}", LogoAccountMaken);
-                
+
             };
 
             btnInloggen.Click += delegate
             {
                 if (etUsername.Text != "" && etUsername.Text != "Username" && etPassword.Text != "" && etPassword.Text != "Password")
                 {
-                        if (LogoAccountMaken == "Youtube")
-                        {
-                            YoutubeUsername = etUsername.Text;
-                            YoutubePassword = etPassword.Text;
-                        }
+                    if (LogoAccountMaken == "Youtube")
+                    {
+                        YoutubeUsername = etUsername.Text;
+                        YoutubePassword = etPassword.Text;
+                    }
 
-                        if (LogoAccountMaken == "Netflix")
-                        {
-                            NetflixUsername = etUsername.Text;
-                            NetflixPassword = etPassword.Text;
-                        }
+                    else if (LogoAccountMaken == "Netflix")
+                    {
+                        NetflixUsername = etUsername.Text;
+                        NetflixPassword = etPassword.Text;
+                    }
 
-                        if (LogoAccountMaken == "Ziggo")
-                        {
-                            ZiggoUsername = etUsername.Text;
-                            ZiggoPassword = etPassword.Text;
-                        
-                        }
+                    else if (LogoAccountMaken == "Ziggo")
+                    {
+                        ZiggoUsername = etUsername.Text;
+                        ZiggoPassword = etPassword.Text;
+
+                    }
                 }
                 AccToevoegen();
             };
 
-            
+
 
 
 
@@ -319,14 +303,17 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
         private void AccVerwijderen()
         {
             SetContentView(Resource.Layout.LayoutAccountVerwijderen);
+
             btnInstellingenAccV = FindViewById<Button>(Resource.Id.btnInstellingenAccV);
             btnMenuAccV = FindViewById<Button>(Resource.Id.btnMenuAccV);
             btnNetflixAccV = FindViewById<Button>(Resource.Id.btnNetflixAccountVerwijderen);
             btnYoutubeAccV = FindViewById<Button>(Resource.Id.btnYoutubeAccountVerwijderen);
             btnZiggoAccV = FindViewById<Button>(Resource.Id.btnZiggoAccountVerwijderen);
+
             txtNetflixAcc = FindViewById<TextView>(Resource.Id.txtNetflixAccountVerwijderen);
             txtYoutubeAcc = FindViewById<TextView>(Resource.Id.txtYoutubeAccountVerwijderen);
             txtZiggoAcc = FindViewById<TextView>(Resource.Id.txtZiggoAccountVerwijderen);
+
             txtNetflixAcc.Text = string.Format("{0}", NetflixUsername);
             txtZiggoAcc.Text = string.Format("{0}", ZiggoUsername);
             txtYoutubeAcc.Text = string.Format("{0}", YoutubeUsername);
@@ -337,10 +324,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 OpenInstellingen(PaginaVandaan);
             };
 
-            btnMenuAccV.Click += delegate
-            {
-                OpenMenu();
-            };
+            btnMenuAccV.Click += delegate { OpenMenu(); };
 
             btnNetflixAccV.Click += delegate
             {
@@ -393,6 +377,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             btnYoutubeFavorieten2 = FindViewById<Button>(Resource.Id.btnYoutubeFavorieten2);
             btnYoutubeFavorieten3 = FindViewById<Button>(Resource.Id.btnYoutubeFavorieten3);
             btnYoutubeFavorieten4 = FindViewById<Button>(Resource.Id.btnYoutubeFavorieten4);
+            btnZoeken = FindViewById<Button>(Resource.Id.btnZoeken);
             string program = "";
             string komtVanProgram = "Favorieten";
             btnNetflixFavorieten1.Click += delegate
@@ -456,21 +441,22 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 program = "Ziggo Go Fav 4";
                 OpenProgram(program, komtVanProgram);
             };
-            btnZoeken = FindViewById<Button>(Resource.Id.btnZoeken);
             btnZoeken.Click += delegate
             {
                 startZoeken();
             };
-         }
+        }
+
         private void startZoeken()
         {
-            btnSearchBack = FindViewById<Button>(Resource.Id.btnSearchBack);
+            SetContentView(Resource.Layout.LayoutSearch);
+            btnSearchBack = FindViewById<Button>(Resource.Id.btnSearchBackT);
             btnZoekenZoeken = FindViewById<Button>(Resource.Id.btnZoekenZoeken);
             btnMenuSearch = FindViewById<Button>(Resource.Id.btnMenuSearch);
             btnInstellingenSearch = FindViewById<Button>(Resource.Id.btnInstellingenSearch);
             etZoekveld = FindViewById<EditText>(Resource.Id.etZoekveld);
             txtSearch = FindViewById<TextView>(Resource.Id.txtSearch);
-            Zoeken = ""; 
+            Zoeken = "";
             btnSearchBack.Click += delegate
             {
                 Favorieten();
@@ -480,7 +466,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 if (etZoekveld.Text != "Zoeken")
                 {
                     Zoeken = etZoekveld.Text;
-                    txtSearch.Text = string.Format("{0} Wordt nu heen gezocht", Zoeken );
+                    txtSearch.Text = string.Format("{0} Wordt nu heen gezocht", Zoeken);
                 }
             };
 
@@ -499,12 +485,14 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 
         private void OuderZicht()
         {
+            SetContentView(Resource.Layout.OuderZicht);
             btnMenuOuder = FindViewById<Button>(Resource.Id.btnMenuOuder);
             btnInstellingenOuder = FindViewById<Button>(Resource.Id.btnInstellingenOuder);
             btnOuderActiveren = FindViewById<Button>(Resource.Id.btnOuderActiveren);
             btnOuderDeactiveren = FindViewById<Button>(Resource.Id.btnOuderDeactiveren);
             etOuderCode = FindViewById<EditText>(Resource.Id.etOuderCode);
             txtOuderZicht = FindViewById<TextView>(Resource.Id.txtOuderZicht);
+            txtCode = FindViewById<TextView>(Resource.Id.txtCode);
             dezeCode = "";
             btnMenuOuder.Click += delegate
             {
@@ -520,7 +508,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 if (etOuderCode.Text != "Code" && etOuderCode.Text != "")
                 {
                     dezeCode = etOuderCode.Text;
-                    txtOuderZicht.Text = string.Format("De code {0} is nu geactiveerd.", dezeCode);
+                    txtCode.Text = string.Format("De code {0} is nu geactiveerd.", dezeCode);
                 }
             };
             btnOuderDeactiveren.Click += delegate
@@ -528,7 +516,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 if (etOuderCode.Text != "Code" && etOuderCode.Text != "")
                 {
                     dezeCode = etOuderCode.Text;
-                    txtOuderZicht.Text = string.Format("De code {0} is nu gedeactiveerd", dezeCode);
+                    txtCode.Text = string.Format("De code {0} is nu gedeactiveerd", dezeCode);
                 }
             };
 

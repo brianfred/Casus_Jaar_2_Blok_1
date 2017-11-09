@@ -10,11 +10,12 @@
         android:layout_marginLeft="525.0dp"
         android:background="@drawable/instellingen" />
     <Button
-        android:text="Menu"
+        android:text=""
         android:layout_width="75.0dp"
         android:layout_height="75.0dp"
         android:id="@+id/btnMenuOuder"
-        android:layout_marginLeft="450.0dp" />
+        android:layout_marginLeft="450.0dp"
+        android:background="@drawable/home" />
     <TextView
         android:text="Ouderlijk Toezicht"
         android:layout_width="300.0dp"
@@ -52,6 +53,6 @@
         android:layout_width="500.0dp"
         android:layout_height="700.0dp"
         android:layout_marginTop="500.0dp"
-        android:id="@+id/txtSearch"
+        android:id="@+id/txtCode"
         android:layout_marginLeft="50.0dp" />
 </RelativeLayout>

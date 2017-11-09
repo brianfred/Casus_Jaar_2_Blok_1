@@ -10,11 +10,12 @@
         android:layout_marginLeft="525.0dp"
         android:background="@drawable/instellingen" />
     <Button
-        android:text="Menu"
+        android:text=""
         android:layout_width="75.0dp"
         android:layout_height="75.0dp"
         android:id="@+id/btnMenuAccV"
-        android:layout_marginLeft="450.0dp" />
+        android:layout_marginLeft="450.0dp"
+        android:background="@drawable/home" />
     <TextView
         android:text=""
         android:layout_width="160.0dp"

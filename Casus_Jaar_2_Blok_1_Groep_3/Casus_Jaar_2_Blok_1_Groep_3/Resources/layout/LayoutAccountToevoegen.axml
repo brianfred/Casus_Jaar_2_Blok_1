@@ -10,11 +10,12 @@
         android:layout_marginLeft="525.0dp"
         android:background="@drawable/instellingen" />
     <Button
-        android:text="Menu"
+        android:text=""
         android:layout_width="75.0dp"
         android:layout_height="75.0dp"
         android:id="@+id/btnTerugNaarMenuAccT"
-        android:layout_marginLeft="450.0dp" />
+        android:layout_marginLeft="450.0dp"
+        android:background="@drawable/home" />
     <Button
         android:text="Netflix"
         android:layout_width="400.0dp"
@@ -34,21 +35,21 @@
         android:layout_marginRight="100.0dp"
         android:layout_marginTop="600.0dp" />
     <EditText
-        android:text="Gebruikersnaam"
         android:layout_width="400.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/etUsername"
         android:layout_marginBottom="5.0dp"
         android:layout_marginLeft="100.0dp"
         android:layout_marginRight="100.0dp"
-        android:layout_marginTop="300.0dp" />
+        android:layout_marginTop="300.0dp"
+        android:hint="Gebruikersnaam" />
     <EditText
-        android:text="Wachtwoord"
         android:layout_width="400.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/etPassword"
         android:layout_marginBottom="5.0dp"
         android:layout_marginLeft="100.0dp"
         android:layout_marginRight="100.0dp"
-        android:layout_marginTop="400.0dp" />
+        android:layout_marginTop="400.0dp"
+        android:hint="Wachtwoord" />
 </RelativeLayout>

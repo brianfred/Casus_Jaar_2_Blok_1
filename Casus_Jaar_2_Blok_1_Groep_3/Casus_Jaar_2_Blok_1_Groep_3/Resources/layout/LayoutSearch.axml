@@ -13,14 +13,15 @@
         android:text=""
         android:layout_width="75.0dp"
         android:layout_height="75.0dp"
-        android:id="@+id/btnSearchBack"
+        android:id="@+id/btnSearchBackT"
         android:background="@drawable/terugknop5" />
     <Button
-        android:text="Menu"
+        android:text=""
         android:layout_width="75.0dp"
         android:layout_height="75.0dp"
         android:id="@+id/btnMenuSearch"
-        android:layout_marginLeft="450.0dp" />
+        android:layout_marginLeft="450.0dp"
+        android:background="@drawable/home"/>
     <TextView
         android:text="Zoeken"
         android:layout_width="300.0dp"
