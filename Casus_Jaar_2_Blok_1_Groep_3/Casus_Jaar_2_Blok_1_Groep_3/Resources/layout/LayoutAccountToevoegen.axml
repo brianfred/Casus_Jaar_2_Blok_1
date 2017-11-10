@@ -2,6 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:layout_width="50.0dp"
+        android:layout_height="50.0dp"
+        android:layout_marginTop="20.0dp"
+        android:id="@+id/txtInstellingenAccountToevoegenIcon"
+        android:layout_marginLeft="30.0dp"
+        android:background="@drawable/useradd" />
+    <TextView
+        android:text="Account Toevoegen"
+        android:layout_width="300.0dp"
+        android:layout_height="50.0dp"
+        android:layout_marginTop="20.0dp"
+        android:id="@+id/txtInstellingenAccountToevoegen"
+        android:layout_marginLeft="100.0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
     <Button
         android:text=""
         android:layout_width="75.0dp"
@@ -17,14 +32,22 @@
         android:layout_marginLeft="450.0dp"
         android:background="@drawable/home" />
     <Button
-        android:text="Netflix"
         android:layout_width="400.0dp"
         android:layout_height="200.0dp"
         android:id="@+id/btnLogoAccount"
         android:layout_marginBottom="5.0dp"
         android:layout_marginLeft="100.0dp"
         android:layout_marginRight="100.0dp"
-        android:layout_marginTop="75.0dp" />
+        android:layout_marginTop="100.0dp"
+        android:background="@drawable/netflix" />
+    <TextView
+        android:text=""
+        android:layout_width="75.0dp"
+        android:layout_height="75.0dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginTop="625.0dp"
+        android:id="@+id/txtInloggenKnopjeIcon"
+        android:background="@drawable/inloggenicon" />
     <Button
         android:text="Inloggen"
         android:layout_width="400.0dp"
@@ -33,7 +56,7 @@
         android:layout_marginBottom="5.0dp"
         android:layout_marginLeft="100.0dp"
         android:layout_marginRight="100.0dp"
-        android:layout_marginTop="600.0dp" />
+        android:layout_marginTop="625.0dp" />
     <EditText
         android:layout_width="400.0dp"
         android:layout_height="100.0dp"
@@ -41,7 +64,7 @@
         android:layout_marginBottom="5.0dp"
         android:layout_marginLeft="100.0dp"
         android:layout_marginRight="100.0dp"
-        android:layout_marginTop="300.0dp"
+        android:layout_marginTop="325.0dp"
         android:hint="Gebruikersnaam" />
     <EditText
         android:layout_width="400.0dp"
@@ -50,6 +73,6 @@
         android:layout_marginBottom="5.0dp"
         android:layout_marginLeft="100.0dp"
         android:layout_marginRight="100.0dp"
-        android:layout_marginTop="400.0dp"
+        android:layout_marginTop="425.0dp"
         android:hint="Wachtwoord" />
 </RelativeLayout>

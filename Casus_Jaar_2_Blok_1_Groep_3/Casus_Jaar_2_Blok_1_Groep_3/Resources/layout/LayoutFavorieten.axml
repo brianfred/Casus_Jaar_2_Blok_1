@@ -4,13 +4,21 @@
     android:layout_height="match_parent">
     <TextView
         android:text="Favorieten"
-        android:layout_width="300.0dp"
-        android:layout_height="50.0dp"
+        android:layout_width="225.0dp"
+        android:layout_height="75.0dp"
         android:layout_marginTop="20.0dp"
         android:id="@+id/txtFavorieten"
-        android:layout_marginLeft="200.0dp"
+        android:layout_marginLeft="220.0dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="@android:dimen/app_icon_size" />
+    <TextView
+        android:text=""
+        android:layout_width="75.0dp"
+        android:layout_height="75.0dp"
+        android:layout_marginTop="15.0dp"
+        android:id="@+id/txtFavIconFav"
+        android:layout_marginLeft="125.0dp"
+        android:background="@drawable/favorite" />
     <Button
         android:text=""
         android:layout_width="75.0dp"
@@ -134,10 +142,10 @@
         android:layout_marginLeft="520.0dp"
         android:layout_marginTop="685.0dp" />
     <Button
-        android:text="Zoeken"
-        android:layout_width="160.0dp"
+        android:layout_width="75.0dp"
         android:layout_height="75.0dp"
         android:id="@+id/btnZoeken"
         android:layout_marginLeft="40.0dp"
-        android:layout_marginTop="  15.0dp" />
+        android:layout_marginTop="  15.0dp"
+        android:background="@drawable/searchicon" />
 </RelativeLayout>

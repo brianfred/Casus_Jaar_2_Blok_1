@@ -236,7 +236,20 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
             etUsername = FindViewById<EditText>(Resource.Id.etUsername);
             etPassword = FindViewById<EditText>(Resource.Id.etPassword);
             btnInloggen = FindViewById<Button>(Resource.Id.btnInloggen);
-            btnLogoAccount.Text = string.Format("{0}", LogoAccountMaken);
+
+            if (LogoAccountMaken == "Netflix")
+            { 
+                btnLogoAccount.SetBackgroundResource(Resource.Drawable.Youtube3);
+            }
+            else if (LogoAccountMaken == "Youtube")
+            {
+                btnLogoAccount.SetBackgroundResource(Resource.Drawable.Ziggo4);
+            }
+            else if (LogoAccountMaken == "Ziggo")
+            {
+                btnLogoAccount.SetBackgroundResource(Resource.Drawable.Netflix);
+            }
+
             btnInstellingenAccT.Click += delegate
             {
                 string PaginaVandaan = "AccT";
@@ -253,16 +266,18 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
                 if (LogoAccountMaken == "Netflix")
                 {
                     LogoAccountMaken = "Youtube";
+                    btnLogoAccount.SetBackgroundResource(Resource.Drawable.Youtube3);
                 }
                 else if (LogoAccountMaken == "Youtube")
                 {
                     LogoAccountMaken = "Ziggo";
+                    btnLogoAccount.SetBackgroundResource(Resource.Drawable.Ziggo4);
                 }
                 else if (LogoAccountMaken == "Ziggo")
                 {
                     LogoAccountMaken = "Netflix";
+                    btnLogoAccount.SetBackgroundResource(Resource.Drawable.Netflix);
                 }
-                btnLogoAccount.Text = string.Format("{0}", LogoAccountMaken);
 
             };
 
