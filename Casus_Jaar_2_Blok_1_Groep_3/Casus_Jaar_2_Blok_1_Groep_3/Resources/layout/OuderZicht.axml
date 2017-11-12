@@ -34,14 +34,14 @@
         android:layout_marginLeft="50.0dp"
         android:background="@drawable/parentvision" />
     <EditText
-        android:text="Code"
         android:layout_width="400.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/etOuderCode"
         android:layout_marginBottom="5.0dp"
         android:layout_marginLeft="100.0dp"
         android:layout_marginRight="100.0dp"
-        android:layout_marginTop="250.0dp" />
+        android:layout_marginTop="250.0dp"
+        android:hint="Code" />
     <Button
         android:text="Activeren"
         android:layout_width="200.0dp"

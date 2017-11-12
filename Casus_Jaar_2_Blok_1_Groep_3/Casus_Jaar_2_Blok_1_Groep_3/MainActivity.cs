@@ -7,6 +7,7 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
     [Activity(Label = "Casus_Jaar_2_Blok_1_Groep_3", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        //Wij hebben voor het prototype het device Nexus 7 (2012) gebruikt met de android versie 7.1.1 (API 25) 
         private TextView txtFlagIconMenu;
         private TextView txtOuderZicht;
         private Button btnMenuOuder;
@@ -239,15 +240,15 @@ namespace Casus_Jaar_2_Blok_1_Groep_3
 
             if (LogoAccountMaken == "Netflix")
             { 
-                btnLogoAccount.SetBackgroundResource(Resource.Drawable.Youtube3);
+                btnLogoAccount.SetBackgroundResource(Resource.Drawable.Netflix);
             }
             else if (LogoAccountMaken == "Youtube")
             {
-                btnLogoAccount.SetBackgroundResource(Resource.Drawable.Ziggo4);
+                btnLogoAccount.SetBackgroundResource(Resource.Drawable.Youtube3);
             }
             else if (LogoAccountMaken == "Ziggo")
             {
-                btnLogoAccount.SetBackgroundResource(Resource.Drawable.Netflix);
+                btnLogoAccount.SetBackgroundResource(Resource.Drawable.Ziggo4);
             }
 
             btnInstellingenAccT.Click += delegate
